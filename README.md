@@ -9,9 +9,9 @@ The lab focuses on network segmentation, firewalling, endpoint logging, and cent
 
 🧭 Network Topology
 
-SOC Homelab Network Topology
+SOC Homelab Network Topology image pending...
 
-Internal Network: 192.168.1.0/24
+Internal Network: 000.000.0.0/00
 All systems communicate through a pfSense firewall acting as the gateway.
 
 🧩 Lab Components
@@ -36,6 +36,7 @@ Roles and services:
 Active Directory Domain Controller
 Sysmon for detailed endpoint telemetry
 Splunk Universal Forwarder for log forwarding
+
 🔄 Log & Traffic Flow
 
 Windows DC01 generates security telemetry using Sysmon
@@ -45,6 +46,7 @@ Attack simulation
 Log ingestion
 SOC-style investigation and correlation
 pfSense enforces routing and network boundaries between WAN and LAN
+
 🛠️ Implementation Steps
 
 Installed Oracle VirtualBox to host all virtual machines
@@ -68,6 +70,7 @@ Log Configuration (Inputs.conf): The inputs.conf file was manually edited to ens
 Persistence: The SplunkForwarder service was restarted, and the log pipeline was verified using the netstat command.
 Validated end-to-end detection by generating events and analyzing them in Splunk
 SOC Dashboard panel was created in Splunk to categorize attack types for real-time monitoring.
+
 🎯 Skills Demonstrated
 
 SOC lab design and architecture
